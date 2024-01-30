@@ -1,23 +1,9 @@
 {
-  "title": "Code Snippets",
-  "description": "Include code snippets of various languages",
+  "title": "Foreground Background Scripts",
+  "description": "Execute code automatically in foreground and background",
   "details": {
     "intro": {
-      "text": "intro.md"
-    },
-    "steps": [
-      {
-        "text": "step1.md"
-      },
-      {
-        "text": "step2.md"
-      },
-      {
-        "text": "step3.md"
-      }
-    ],
-    "finish": {
-      "text": "finish.md"
+      "background": "background.sh"
     }
   },
   "backend": {
