@@ -3,7 +3,8 @@
   "description": "See how KubiScan Works",
   "details": {
     "intro": {
-      "background": "background.sh"
+      "background": "background.sh",
+	  "foreground": "foreground.sh"
     }
   },
   "backend": {
