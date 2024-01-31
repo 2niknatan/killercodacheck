@@ -10,10 +10,6 @@
 			{
 				"title": "Scaning risky pods",
 				"text": "step1.md"
-			},
-			{
-				"title": "Scaning risky subjects",
-				"text": "After we saw that 'mypod' is risky lets check its subjects"
 			}
 		]
 	},
