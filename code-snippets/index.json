@@ -1,13 +1,23 @@
 {
-  "title": "KubiScan Playground",
-  "description": "See how KubiScan Works",
-  "details": {
-    "intro": {
-      "background": "background.sh",
-	  "foreground": "foreground.sh"
-    }
-  },
-  "backend": {
-    "imageid": "kubernetes-kubeadm-1node"
-  }
+	"title": "KubiScan Playground",
+	"description": "See how KubiScan Works",
+	"details": {
+		"intro": {
+			"background": "background.sh",
+			"foreground": "foreground.sh"
+		},
+		"steps": [
+			{
+				"title": "Scaning risky pods",
+				"text": "step1.md"
+			},
+			{
+				"title": "Scaning risky subjects",
+				"text": "After we saw that 'mypod' is risky lets check its subjects"
+			}
+		]
+	},
+	"backend": {
+		"imageid": "kubernetes-kubeadm-1node"
+	}
 }
