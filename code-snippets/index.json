@@ -6,6 +6,12 @@
 			"background": "background.sh",
 			"foreground": "foreground.sh"
 		},
+		"steps": [
+			{
+				"title": "Scaning risky pods",
+				"text": "step1.md"
+			}
+		]
 	},
 	"backend": {
 		"imageid": "kubernetes-kubeadm-1node"
