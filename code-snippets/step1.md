@@ -1,4 +1,3 @@
-### Bash
-```
-kubiscan -rp
-```
+# Run the following command:
+
+`kubiscan -rp`
