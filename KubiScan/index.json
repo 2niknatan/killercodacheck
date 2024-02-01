@@ -1,6 +1,6 @@
 {
 	"title": "KubiScan Playground",
-	"description": "See how KubiScan Works",
+	"description": "learn how to use KubiScan on your kubernetes cluster",
 	"details": {
 		"intro": {
 			"background": "background.sh",
