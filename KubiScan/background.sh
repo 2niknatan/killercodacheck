@@ -99,7 +99,7 @@ spec:
           name: my-secret
           key: password
 EOF
-kubectl apply -f << EOF
+kubectl apply -f - << EOF
 apiVersion: v1
 kind: Pod
 metadata:
