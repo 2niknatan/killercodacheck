@@ -1,1 +1,1 @@
-![kubiscan_logp](https://github.com/2niknatan/killercodacheck/blob/main/KubiScan/kubiscan_logo.png?raw=true)
+<img src="https://github.com/2niknatan/killercodacheck/blob/main/KubiScan/kubiscan_logo.png?raw=true" alt="kubiscan_logp" width="200"/>
