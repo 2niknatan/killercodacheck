@@ -3,9 +3,9 @@
 	"description": "learn how to use KubiScan on your kubernetes cluster",
 	"details": {
 		"intro": {
-			"background": "background.sh",
+			"text": "intro.md",
 			"foreground": "foreground.sh",
-			"text": "intro.md"
+			"background": "background.sh"
 		},
 		"steps":[
 			{
