@@ -33,5 +33,4 @@ EOF
 
 kubectl apply -f my-pod-env.yaml
 kubectl apply -f pod-with-host-access.yaml
-clear
 kubiscan
