@@ -1,13 +1,24 @@
 cd /tmp/KubiScan
 pip install -r requirements.txt
 alias kubiscan='python3 /tmp/KubiScan/KubiScan.py'
+
+# kubectl apply -f - << EOF
+# apiVersion: v1
+# kind: Secret
+# metadata:
+#   name: kubiscan-sa-secret
+# type: Opaque
+# data:
+#   username: dXNlcm5hbWU=
+#   password: cGFzc3dvcmQ=
+# EOF
 kubectl apply -f - << EOF
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: kubiscan-sa
   namespace: default
-  automountServiceAccountToken: true
+automountServiceAccountToken: true
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
