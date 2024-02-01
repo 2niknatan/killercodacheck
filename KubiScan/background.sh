@@ -10,7 +10,6 @@ data:
   username: dXNlcm5hbWU=
   password: cGFzc3dvcmQ=
 EOF
-
 kubectl apply -f - << EOF
 apiVersion: v1
 kind: ServiceAccount
@@ -43,7 +42,6 @@ rules:
   resources: ["roles", "clusterroles", "rolebindings", "clusterrolebindings", "pods", "secrets"]
   verbs: ["get", "list"]
 EOF
-
 kubectl apply -f - << EOF
 apiVersion: v1
 kind: Pod
