@@ -2,23 +2,24 @@ cd /tmp/KubiScan
 pip install -r requirements.txt
 alias kubiscan='python3 /tmp/KubiScan/KubiScan.py'
 
-# kubectl apply -f - << EOF
-# apiVersion: v1
-# kind: Secret
-# metadata:
-#   name: kubiscan-sa-secret
-# type: Opaque
-# data:
-#   username: dXNlcm5hbWU=
-#   password: cGFzc3dvcmQ=
-# EOF
+kubectl apply -f - << EOF
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kubiscan-sa-secret
+type: Opaque
+data:
+  username: dXNlcm5hbWU=
+  password: cGFzc3dvcmQ=
+EOF
 kubectl apply -f - << EOF
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: kubiscan-sa
   namespace: default
-automountServiceAccountToken: true
+secrets:
+  - name: kubiscan-sa-secret
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -44,7 +45,7 @@ rules:
   verbs: ["get", "list"]
 
 EOF
-KUBISCAN_SA_SECRET=$(kubectl get sa kubiscan-sa -o=jsonpath='{.secrets[0].name}')
+
 kubectl apply -f - << EOF
 apiVersion: v1
 kind: Pod
@@ -67,7 +68,7 @@ spec:
   volumes:
   - name: secret-volume
     secret:
-      secretName: "${KUBISCAN_SA_SECRET}"
+      secretName: kubiscan-sa-secret
   - name: not-token-secret
     secret:
       secretName: mysecret
