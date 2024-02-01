@@ -7,6 +7,7 @@ kind: ServiceAccount
 metadata:
   name: kubiscan-sa
   namespace: default
+  automountServiceAccountToken: true
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
