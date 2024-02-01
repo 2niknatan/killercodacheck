@@ -1,6 +1,36 @@
 cd /tmp
 git clone https://github.com/cyberark/KubiScan.git
-kubectl apply -f kubiscan-sa.yaml
+kubectl apply -f - << EOF
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kubiscan-sa
+  namespace: default
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata: 
+  name: kubiscan-clusterrolebinding
+subjects: 
+- kind: ServiceAccount 
+  name: kubiscan-sa
+  namespace: default
+  apiGroup: ""
+roleRef: 
+  kind: ClusterRole
+  name: kubiscan-clusterrole
+  apiGroup: ""
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata: 
+  name: kubiscan-clusterrole
+rules: 
+- apiGroups: ["*"]
+  resources: ["roles", "clusterroles", "rolebindings", "clusterrolebindings", "pods", "secrets"]
+  verbs: ["get", "list"]
+EOF
+
 KUBISCAN_SA_SECRET=$(kubectl get sa kubiscan-sa -o=jsonpath='{.secrets[0].name}')
 kubectl apply -f - << EOF
 apiVersion: v1
