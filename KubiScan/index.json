@@ -5,7 +5,7 @@
 		"intro": {
 			"background": "background.sh",
 			"foreground": "foreground.sh",
-			"text": "into.md"
+			"text": "intro.md"
 		},
 		"steps":[
 			{
