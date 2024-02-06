@@ -54,12 +54,7 @@
     }
   },
   "environment": {
-    "setup": [
-		"cd /tmp > /tmp/log1.txt",
-      	"git clone https://github.com/cyberark/KubiScan.git > /tmp/log2.txt",
-      	"cd KubiScan > /tmp/log3.txt",
-      	"pip install -r requirements.txt > /tmp/log5.txt"
-	]
+	"git": "https://github.com/cyberark/KubiScan.git"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
