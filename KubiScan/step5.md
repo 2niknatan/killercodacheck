@@ -2,7 +2,7 @@
 
 First, we scan for risky Roles/ClusterRoles by running the following command:
 
-`kubiscan -rab`
+<code>kubiscan -rab</code>
 
 
 we will receive a list of all risky RoleBindings and ClusterRoleBinding and one of them is `kubiscan-clusterrolebinding` and should look as follows:

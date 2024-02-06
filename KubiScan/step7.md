@@ -1,3 +1,3 @@
 # More KubiScan Functionality
 
-In this section we will cover some more KubiScan functionality. 
+In this part we will cover some more KubiScan functionality. 
