@@ -1,30 +1,16 @@
+## Associated Any Roles Subject Scan
 
-### Highlight important lines
+Now that we know that `kubiscan-sa` is a risky service account we can check which ClusterRole/Role is associated with it through the following command:
+`kubiscan -aars kubiscan-sa -k serviceaccount`
 
-```yaml{2,5,6}
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-  containers:
-  - name: nginx
-    image: nginx
+We recieved the rules associated with kubiscan-sa:
+
 ```
-
-
-```json{6-9}
-{
-    "apiVersion": "v1",
-    "kind": "Pod",
-    "metadata": {
-        "generateName": "weave-net-",
-        "labels": {
-            "name": "weave-net",
-            "pod-template-generation": "1"
-        },
-        "name": "weave-net-tntwq",
-        "namespace": "kube-system",
-    }
-}
+Roles associated to Subject 'kubiscan-sa':
++-------------+-----------+----------------------+--------------------------------------------------------------------------------+
+| Kind        | Namespace | Name                 | Rules                                                                          |
++-------------+-----------+----------------------+--------------------------------------------------------------------------------+
+| ClusterRole | None      | kubiscan-clusterrole | (get,list)->(roles,clusterroles,rolebindings,clusterrolebindings,pods,secrets) |
+|             |           |                      |                                                                                |
++-------------+-----------+----------------------+--------------------------------------------------------------------------------+
 ```

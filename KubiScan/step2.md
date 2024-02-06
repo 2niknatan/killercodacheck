@@ -1,6 +1,6 @@
 ## Scanning Risky Subjects
 
-The pod `mypod` was marked as CRITICAL because of a service account named “kubiscan-sa”, but we want to understand why this service account is privileged.
+The pod `mypod` was marked as CRITICAL because of a service account named `kubiscan-sa`, but we want to understand why this service account is privileged.
 
 To scan risky subject run the following command:
 `kubiscan -rs -ns default`
