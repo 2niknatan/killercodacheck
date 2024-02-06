@@ -1,4 +1,7 @@
-# git clone https://github.com/cyberark/KubiScan.git
+cd /tmp
+git clone https://github.com/cyberark/KubiScan.git
+cd /tmp/KubiScan
+pip install -r requirements.txt
 kubectl apply -f - << EOF
 apiVersion: v1
 kind: Secret
