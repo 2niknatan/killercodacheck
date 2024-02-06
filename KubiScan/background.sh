@@ -1,4 +1,3 @@
-cd /tmp
 # git clone https://github.com/cyberark/KubiScan.git
 kubectl apply -f - << EOF
 apiVersion: v1
