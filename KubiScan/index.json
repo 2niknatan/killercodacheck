@@ -53,14 +53,6 @@
       "text": "finish.md"
     }
   },
-  "environment": {
-	"setup": [
-		{
-			"command": "cd /tmp"
-		}
-	],
-	"showdashboard": true
-  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }
