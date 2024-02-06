@@ -1,71 +1,66 @@
 {
-	"title": "KubiScan Playground",
-	"description": "learn how to use KubiScan on your kubernetes cluster",
-	"details": {
-		"intro": {
-			"text": "intro.md",
-			"foreground": "foreground.sh",
-			"background": "background.sh"
-		},
-		"steps":[
-			{
-				"title": "Risky Pods",
-				"text": "step1.md"
-			},
-			{
-				"title": "Risky Subjects",
-				"text": "step2.md"
-			},
-			{
-				"title": "Associated Any Roles Subject",
-				"text": "step3.md"
-			},
-			{
-				"title": "Risky Roles & ClusterRoles",
-				"text": "step4.md"
-			},
-			{
-				"title": "Risky RolesBindings and ClusterRoleBindings",
-				"text": "step5.md"
-			},
-			{
-				"title": "All Scan",
-				"text": "step6.md"
-			},
-			{
-				"title": "More KubiScan Functionality",
-				"text": "step7.md"
-			},
-			{
-				"title": "Privileged Pods",
-				"text": "step8.md" 
-			},
-			{
-				"title": "Pods Secrets Volume and Pods Secrets Environment",
-				"text": "step9.md"
-			},
-			{
-				"title": "CVE Scan",
-				"text": "step10.md"
-			}
-		],
-		"finish":{
-			"text": "finish.md"
-		}
-	},
-	"environment": {
-        "uilayout": "terminal",
-        "uimessage1": "\u001b[32mYour Interactive Hands On Lab Terminal\u001b[m\r\n",
-		"kubernetes": {
-			"manifests": [
-			  {
-				"version": "1.18.0",
-				"variant": "Kubeadm"
-			  }
-			]
-		  }
+  "title": "KubiScan Playground",
+  "description": "learn how to use KubiScan on your kubernetes cluster",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "foreground.sh",
+      "background": "background.sh"
     },
-    "backend": {
-        "imageid": "kubernetes-cluster-running:1.18"
+    "steps": [
+      {
+        "title": "Risky Pods",
+        "text": "step1.md"
+      },
+      {
+        "title": "Risky Subjects",
+        "text": "step2.md"
+      },
+      {
+        "title": "Associated Any Roles Subject",
+        "text": "step3.md"
+      },
+      {
+        "title": "Risky Roles & ClusterRoles",
+        "text": "step4.md"
+      },
+      {
+        "title": "Risky RolesBindings and ClusterRoleBindings",
+        "text": "step5.md"
+      },
+      {
+        "title": "All Scan",
+        "text": "step6.md"
+      },
+      {
+        "title": "More KubiScan Functionality",
+        "text": "step7.md"
+      },
+      {
+        "title": "Privileged Pods",
+        "text": "step8.md"
+      },
+      {
+        "title": "Pods Secrets Volume and Pods Secrets Environment",
+        "text": "step9.md"
+      },
+      {
+        "title": "CVE Scan",
+        "text": "step10.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
     }
+  },
+  "environment": {
+    "git": "https://github.com/username/repository.git",
+    "setup": [
+		"cd repository", 
+		"pip install -r requirements.txt"
+	]
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
 }
