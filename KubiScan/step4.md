@@ -13,6 +13,6 @@ We will use the following command to scan for risky Roles/ClusterRoles by runnin
 +----------+-------------+-------------+---------------------------------------------+-----------------------------------+
 ```
 
-We received a list of risky roles and cluster roles, one of them is kubiscan-clusterrole, the same role we saw previously associated with kubiscan-sa.
+We received a list of risky roles and cluster roles, one of them is `kubiscan-clusterrole`, the same role we saw previously associated with `kubiscan-sa`.
 
-Now we want to find which RoleBinding/ClusterRoleBinding is bound to kubiscan-sa service account, so let's keep investigating.
+Now we want to find which RoleBinding/ClusterRoleBinding is bound to `kubiscan-sa` service account, so let's keep investigating.

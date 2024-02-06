@@ -27,6 +27,18 @@
 			{
 				"title": "Risky RolesBindings and ClusterRoleBindings",
 				"text": "step5.md"
+			},
+			{
+				"title": "All Scan",
+				"text": "step6.md"
+			},
+			{
+				"title": "More KubiScan Functionality",
+				"text": "step7.md"
+			},
+			{
+				"title": "Privileged Pods",
+				"text": "step8.md" 
 			}
 		],
 		"finish":{

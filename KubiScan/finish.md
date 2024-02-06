@@ -3,4 +3,4 @@
 
 ### WELL DONE !
 
-You solved this challenge!
+You can now use *KubiScan* and play with it.
