@@ -54,11 +54,11 @@
     }
   },
   "environment": {
-	"debug": true,
-	"git": "https://github.com/cyberark/KubiScan.git",
     "setup": [
-      	"cd KubiScan",
-      	"pip install -r requirements.txt"
+		"cd /tmp > /tmp/log1.txt",
+      	"git clone https://github.com/cyberark/KubiScan.git > /tmp/log2.txt",
+      	"cd KubiScan > /tmp/log3.txt",
+      	"pip install -r requirements.txt > /tmp/log5.txt"
 	]
   },
   "backend": {
