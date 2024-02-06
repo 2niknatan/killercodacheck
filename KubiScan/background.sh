@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /tmp
 git clone https://github.com/cyberark/KubiScan.git
 cd /tmp/KubiScan
@@ -120,5 +121,5 @@ spec:
     hostPath:
       path: /path/on/host
 EOF
-nano /tmp/.backgroundfinished
+touch /tmp/.backgroundfinished
 
