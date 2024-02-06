@@ -23,8 +23,15 @@
 			{
 				"title": "Risky Roles & ClusterRoles",
 				"text": "step4.md"
+			},
+			{
+				"title": "Risky RolesBindings and ClusterRoleBindings",
+				"text": "step5.md"
 			}
-		]
+		],
+		"finish":{
+			"text": "finish.md"
+		}
 	},
 	"backend": {
 		"imageid": "kubernetes-kubeadm-1node"
