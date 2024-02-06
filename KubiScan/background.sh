@@ -120,6 +120,6 @@ spec:
     hostPath:
       path: /path/on/host
 EOF
-
+echo "done" >> /opt/.backgroundfinished
 
 
