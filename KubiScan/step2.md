@@ -1,28 +1,19 @@
+## Scanning Risky Subjects
 
-### Set language specifically
+The pod `mypod` was marked as CRITICAL because of a service account named “kubiscan-sa”, but we want to understand why this service account is privileged.
 
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-  containers:
-  - name: nginx
-    image: nginx
+To scan risky subject run the following command:
+`kubiscan -rs -ns default`
+
+and we get that `kubiscan-sa` is indeed risky subject (ServiceAccount in this case):
+```
++-----------+
+|Risky Users|
++----------+----------------+-----------+-------------+
+| Priority | Kind           | Namespace | Name        |
++----------+----------------+-----------+-------------+
+| CRITICAL | ServiceAccount | default   | kubiscan-sa |
++----------+----------------+-----------+-------------+
 ```
 
-<br>
-
-### Disable syntax highlighting for a snippet
-
-```text
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-```
+Let's keep on investigating.

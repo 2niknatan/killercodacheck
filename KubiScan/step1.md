@@ -1,4 +1,6 @@
-## Run the following command:
+A risky pod is a pod that has a high privileged subject, connected to one of its containers.
+
+## Risky Pods Scanning:
 
 Let's begin out scan by scanning for risky pods in our system by running the following command:
 `kubiscan -rp`

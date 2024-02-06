@@ -9,8 +9,12 @@
 		},
 		"steps":[
 			{
-				"title": "Risky pods",
+				"title": "Risky Pods",
 				"text": "step1.md"
+			},
+			{
+				"title": "Risky Subjects",
+				"text": "step2.md"
 			}
 		]
 	},
