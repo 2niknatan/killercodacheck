@@ -39,6 +39,10 @@
 			{
 				"title": "Privileged Pods",
 				"text": "step8.md" 
+			},
+			{
+				"title": "",
+				"text": "step9.md"
 			}
 		],
 		"finish":{
