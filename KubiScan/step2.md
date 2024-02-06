@@ -1,4 +1,4 @@
-## Scanning Risky Subjects
+## Scanning Risky Subjects Scan
 
 The pod `mypod` was marked as CRITICAL because of a service account named `kubiscan-sa`, but we want to understand why this service account is privileged.
 
@@ -15,5 +15,7 @@ and we get that `kubiscan-sa` is indeed risky subject (ServiceAccount in this ca
 | CRITICAL | ServiceAccount | default   | kubiscan-sa |
 +----------+----------------+-----------+-------------+
 ```
+
+The command lists all the risky subjects which can be a user, group, or service account that has high-privilege roles.
 
 Let's keep on investigating.
