@@ -54,9 +54,13 @@
     }
   },
   "environment": {
-	"git": "https://github.com/cyberark/KubiScan.git"
+	"setup": [
+		"cd /tmp"
+	],
+	"git": "https://github.com/cyberark/KubiScan.git",
+	"showdashboard": true
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }
