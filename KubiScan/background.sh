@@ -120,6 +120,6 @@ spec:
     hostPath:
       path: /path/on/host
 EOF
-
+touch /tmp/background_complete.marker
 
 
