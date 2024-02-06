@@ -55,9 +55,10 @@
   },
   "environment": {
 	"setup": [
-		"cd /tmp"
+		{
+			"command": "cd /tmp"
+		}
 	],
-	"git": "https://github.com/cyberark/KubiScan.git",
 	"showdashboard": true
   },
   "backend": {
