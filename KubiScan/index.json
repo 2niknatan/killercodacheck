@@ -41,8 +41,12 @@
 				"text": "step8.md" 
 			},
 			{
-				"title": "",
+				"title": "Pods Secrets Volume and Pods Secrets Environment",
 				"text": "step9.md"
+			},
+			{
+				"title": "CVE Scan",
+				"text": "step10.md"
 			}
 		],
 		"finish":{
@@ -50,6 +54,6 @@
 		}
 	},
 	"backend": {
-		"imageid": "kubernetes-kubeadm-1node"
+		"imageid": "kubernetes-cluster-running:1.18"
 	}
 }
