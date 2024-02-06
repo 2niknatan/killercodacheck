@@ -121,5 +121,8 @@ spec:
     hostPath:
       path: /path/on/host
 EOF
+
+
+
 touch /tmp/.backgroundfinished
 
