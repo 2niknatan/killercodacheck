@@ -54,6 +54,7 @@
     }
   },
   "environment": {
+	"debug": true,
 	"git": "https://github.com/cyberark/KubiScan.git",
     "setup": [
       	"cd KubiScan",
