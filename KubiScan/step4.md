@@ -1,7 +1,7 @@
 ## Risky Roles & ClusterRoles Scan
 
 We will use the following command to scan for risky Roles/ClusterRoles by running:
-`kubiscan -rar{{execute}}
+`kubiscan -rar`{{execute}}
 
 ```
 +----------------------------+
