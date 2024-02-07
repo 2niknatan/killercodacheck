@@ -21,6 +21,6 @@ We can see that kubiscan-clusterrolebinding is indeed risky and prioritized as *
 
 KubiScan offers to scan rolebindings are associated with a subject.
 running the following command:
-`kubiscan -aarbs kubiscan-sa -k serviceaccount`
+`kubiscan -aarbs kubiscan-sa -k serviceaccount`{{execute}}
 
 we get the associated RoleBinding or, at this point, clusterRoleBinding to `kubiscan-sa` ServiceAccount.
